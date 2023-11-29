@@ -1,0 +1,27 @@
+<div class="cuerpo">
+    <div class="container">
+        <div class="Register">
+            <label for="username">Username</label><br>
+            <input type="text" name="username" id="username" placeholder="Ingresa tu nombre" 
+            [(ngModel)] = "username">
+        
+            <br><br>
+            <label for="email">Email</label><br>
+            <input type="text" name="email" id="email" placeholder="Ingresa tu correo electrónico"
+            [(ngModel)] = "email">
+
+            <br><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña"
+            [(ngModel)] = "password">
+
+            <br><br>
+            <label for="confirmPassword">Confirm Password</label><br>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirma tu contraseña"
+            [(ngModel)] = "confirmPassword">
+
+            <br><br>
+            <button (click)="register()">Registrar</button>   
+        </div>
+    </div>
+</div>

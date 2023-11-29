@@ -1,0 +1,39 @@
+.cuerpo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Puedes cambiar 'Arial' por la fuente que desees */
+    background: linear-gradient(to right, #ff69b4, #9370db); /* Fondo difuminado de rosa a morado */
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #ccc; /* Ancho del borde y color del borde */
+    padding: 20px; /* Espaciado interno del contenedor */
+    border-radius: 10px; /* Redondear las esquinas del borde */
+    background-color: #fff; /* Color de fondo del contenedor */
+    width: 400px; /* Ancho fijo del contenedor */
+}
+
+.Register {
+    margin-top: 20px;
+}
+
+label, input, button {
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+button {
+    background-color: #2ecc71; /* Cambia el color del botón según tus preferencias */
+    color: #fff; /* Cambia el color del texto del botón según tus preferencias */
+    cursor: pointer;
+}
+
+input {
+    width: 200px; /* Ajusta el ancho del campo de entrada según tus preferencias */
+}
