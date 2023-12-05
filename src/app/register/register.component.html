@@ -3,22 +3,24 @@
         <div class="Register">
             <label for="username">Username</label><br>
             <input type="text" name="username" id="username" placeholder="Ingresa tu nombre" 
-            [(ngModel)] = "username">
+            [(ngModel)] = "username" required>
         
             <br><br>
             <label for="email">Email</label><br>
             <input type="text" name="email" id="email" placeholder="Ingresa tu correo electrónico"
-            [(ngModel)] = "email">
+            [(ngModel)] = "email" required>
 
             <br><br>
             <label for="password">Password</label><br>
             <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña"
-            [(ngModel)] = "password">
+            [(ngModel)] = "password"
+            pattern="[A-Za-z0-9]+" required>
 
             <br><br>
             <label for="confirmPassword">Confirm Password</label><br>
             <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirma tu contraseña"
-            [(ngModel)] = "confirmPassword">
+            [(ngModel)] = "confirmPassword"
+            pattern="[A-Za-z0-9]+" required>
 
             <br><br>
             <button (click)="register()">Registrar</button>   

@@ -1,0 +1,76 @@
+<header>
+    <h1>❤❤❤ Opciones de Empleo ❤❤❤</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="/dashboard">Inicio</a></li>
+        <li><a href="/opciones-emple">Opciones de Empleo</a></li>
+        <li><a href="/perfil" >Perfil</a></li>
+    </ul>
+    <button class="cerrarsesion">
+        <a href="">Cerrar Sesion</a>
+    </button>
+</nav>
+
+<main>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Oxxo_Logo.svg/1200px-Oxxo_Logo.svg.png" 
+            width="150px" height="150px">
+            <div class="card-body">
+              <h5 class="card-title">OXXO</h5>
+              <p class="card-text">Cadena de mini supermercados.</p>
+              <button (click)="openModal()">Ver mas</button>
+
+              <div id="myModal" [hidden]="!showModal">
+                <div class="modal-content">
+                    <span class="close" (click)="closeModal()">&times;</span>
+                    <p>Empresa: OXXO</p>
+                    <p>Se necesita ayudante para caja con experiencia</p>
+                    <p>Contacto: 314 6748589</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://i1.wp.com/webadictos.com/media/2017/03/secretos-de-dominos-pizza.png?fit=1024%2C538&ssl=1" width="150px" height="150px">
+            <div class="card-body">
+              <h5 class="card-title">DOMINOS PIZZA</h5>
+              <p class="card-text">Cadena de Resturantes.</p>
+              <button (click)="openModal2()">Ver mas</button>
+
+              <div id="myModal2" [hidden]="!showModal2">
+                <div class="modal-content2">
+                    <span class="close2" (click)="closeModal2()">&times;</span>
+                    <p>Empresa: DOMINOS PIZZA</p>
+                    <p>Se necesita domiciliario con experiencia.</p>
+                    <p>Contacto: 315 6748567</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="data:image/png;base64,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" width="150px" height="150px">
+            <div class="card-body">
+              <h5 class="card-title">MC DONALDS</h5>
+              <p class="card-text">Cadena de restaurantes.</p>
+              <button (click)="openModal3()">Ver mas</button>
+
+              <div id="myModal3" [hidden]="!showModal3">
+                <div class="modal-content3">
+                    <span class="close3" (click)="closeModal3()">&times;</span>
+                    <p>Empresa: MC DONALDS</p>
+                    <p>Se necesita Cocinero/a con experiencia.</p>
+                    <p>Contacto: 313 6748534</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-author">
+        <p><strong>Todos los derechos reservados a Juan Pablo Rodriguez ©2023</strong></p>
+    </div>
+</footer>

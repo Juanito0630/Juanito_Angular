@@ -4,10 +4,10 @@
         <h2>Iniciar Sesion</h2>
         <br>
     <label for="">Username</label><br>
-    <input type="text" name="username" id="username" [(ngModel)]="username" placeholder="ingresa tu nombre">
+    <input type="text" name="username" id="username" [(ngModel)]="usern" placeholder="ingresa tu nombre" required>
     <br><br><br>
     <label for="">Password</label><br>
-    <input type="text" name="pass" id="pass" [(ngModel)]="pass" placeholder="ingresa tu password ">
+    <input type="password" name="pass" id="pass" [(ngModel)]="pass" placeholder="ingresa tu password " required>
     <br><br>
     <button (click)="login()">Ingresar</button>
     <br>

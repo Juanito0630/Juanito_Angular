@@ -12,28 +12,62 @@ import { RegisterComponent } from '../register/register.component';
   imports: [CommonModule, FormsModule]
 })
 export class LoginComponent {
-  storageGlobal: String = ''
-  username='';
-  pass='';
+  usern: string = '';
+  pass: string = '';
+  storageGlobal: string = '';
 
   constructor(public router: Router){
     
   }
   login(){
-    if (this.username == '' && this.pass == '') {
-      console.log("Buena mani")
-    } else if(this.username == ''){
-      console.log("OLIII")
-    } else if(this.pass == ''){
-      console.log("OLAAA")
+    let usern = localStorage.getItem('username');
+    let pass = localStorage.getItem('password');
+
+    let usernParsed = JSON.stringify(this.usern);
+    let passParsed = JSON.stringify(this.pass);
+
+    console.log(this.usern);
+    console.log(this.pass);
+
+    //Validar campos
+    if (this.usern == '' && this.pass == ''){
+      console.log("Campos vacios, por favor rellenar formatos")
+      alert("Campos vacios, por favor rellenar formatos")
+    } else if (this.usern == '') {
+      console.log("Por favor, ingresa el nombre")
+      alert("Por favor, ingresa el nombre")
+      if (this.usern != usern){
+        console.log("nombre no existe")
+      } else {
+        console.log("Dato del Localstorage correcto")
+      }
+    } else if (this.pass == '') {
+      console.log("Por favor, ingresa una contraseña valida")
+      alert("Por favor, ingresa una contraseña valida")
+
+    } else if (usern === usernParsed && pass === passParsed){
+      
+      console.log("Login exitoso")
+      console.log("--------------------")
+      //Datos
+      console.log('Username: ' + this.usern)
+      console.log('Password: ' + this.pass)
+      console.log("--------------------")
+
+      //Redirección
+      console.log("Redireccionando al Dashboard...")
+      this.router.navigateByUrl('/dashboard');
+
     } else {
-      this.router.navigateByUrl('/dashboard')
+      console.log("Perfil no existe, por favor verifique el username y/o contraseña")
+      alert("Perfil no existe, por favor verifique el username y/o contraseña")
     }
   }
 
   getstoregeGlobal(){
-    let texto = JSON.stringify( localStorage.getItem('campo'))
+    let texto = JSON.stringify( localStorage.getItem('username'))
     console.log(texto)
+    this.storageGlobal = JSON.parse(texto)  
     //this.storageGlobal=texto
   }
 

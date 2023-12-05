@@ -36,7 +36,7 @@ main {
 
   .card {
     width: 300px;
-    border: 1px solid #DB0085;
+    border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     margin: 16px;
@@ -98,102 +98,57 @@ main {
 }
 
 
-
-/* Agrega estilos según tu diseño y preferencias */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
-
-.modal-content {
-    background-color: #44E3D9;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
+#perfil-container {
+    display: flex;
     width: 80%;
-}
+    margin: auto;
+    background-color: #deddddd0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 
-.close {
-    color: #2196F3; /* Cambiar a color azul */
-    float: right;
-    font-size: 36px; /* Ajustar el tamaño del botón */
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #0D47A1;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-.modal2 {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
-
-.modal-content2 {
-    background-color: #44E3D9;
-    margin: 15% auto;
+  #info-section {
+    flex: 1;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
+  }
 
-.close2 {
-    color: #2196F3; /* Cambiar a color azul */
-    float: right;
-    font-size: 36px; /* Ajustar el tamaño del botón */
-    font-weight: bold;
-}
-
-.close2:hover,
-.close2:focus {
-    color: #0D47A1;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-.modal3 {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
-
-.modal-content3 {
-    background-color: #44E3D9;
-    margin: 15% auto;
+  #edit-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
+    background-color: #f8f8f8a0;
+  }
 
-.close3 {
-    color: #2196F3; /* Cambiar a color azul */
-    float: right;
-    font-size: 36px; /* Ajustar el tamaño del botón */
-    font-weight: bold;
-}
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
 
-.close3:hover,
-.close3:focus {
-    color: #0D47A1;
-    text-decoration: none;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  p {
+    color: #555;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
     cursor: pointer;
-}
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }

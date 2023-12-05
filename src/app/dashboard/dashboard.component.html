@@ -1,19 +1,152 @@
     <header>
-        <h1>Dashboard</h1>
+        <h1>❤❤❤ CompuTrabajo ❤❤❤</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a >Inicio</a></li>
-            <li><a >Opciones de Empleo</a></li>
-            <li><a ></a>Perfil</li>
-            <footer>
-                <a href="">salir</a>
-            </footer>
+            <li><a href="/dashboard">Inicio</a></li>
+            <li><a href="/opciones-emple">Opciones de Empleo</a></li>
+            <li><a href="/perfil" >Perfil</a></li>
         </ul>
+        <button class="cerrarsesion">
+            <a href="">Cerrar Sesion</a>
+        </button>
     </nav>
 
     <main>
-        <h2>Contenido Principal</h2>
-        <p>Bienvenido al dashboard. Aquí puedes agregar tu contenido principal.</p>
+    <div class="card-container">
+        <div class="card">
+            <img src="data:image/png;base64,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" 
+            width="150px" height="150px">
+            <div class="card-body">
+              <h5 class="card-title">X-BOX</h5>
+              <p class="card-text">Empresa dedicada a Consolas y Videojuegos de Microsoft.</p>
+              <button (click)="openModal()">Ver mas</button>
+
+              <div id="myModal" [hidden]="!showModal">
+                <div class="modal-content">
+                    <span class="close" (click)="closeModal()">&times;</span>
+                    <p>Empresa: X-BOX</p>
+                    <p>Se necesita un desarrollador especialista en animaciones 3D.</p>
+                    <p>Contacto: 319 6748634</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/26/45/a8/2645a82c0899d96bdce84f33effa8bc5.jpg" width="150px" height="150px">
+            <div class="card-body">
+              <h5 class="card-title">NINTENDO</h5>
+              <p class="card-text">Empresa dedicada a Consolas y Videojuegpos Originaria de Japon.</p>
+              <button (click)="openModal2()">Ver mas</button>
+
+              <div id="myModal2" [hidden]="!showModal2">
+                <div class="modal-content2">
+                    <span class="close2" (click)="closeModal2()">&times;</span>
+                    <p>Empresa: NINTENDO</p>
+                    <p>Se necesita un Tester para pruebas de nuevos lanzamientos.</p>
+                    <p>Contacto: 316 3618589</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/5d/d7/a0/5dd7a0033d3812e45c674e7d4d59735e.png" width="150px" height="150px">
+            <div class="card-body">
+              <h5 class="card-title">PLAY STATION</h5>
+              <p class="card-text">Empresa de Consolas de Sony Interactive Entertainment.</p>
+              <button (click)="openModal3()">Ver mas</button>
+
+              <div id="myModal3" [hidden]="!showModal3">
+                <div class="modal-content3">
+                    <span class="close3" (click)="closeModal3()">&times;</span>
+                    <p>Empresa: PlayStation</p>
+                    <p>Se requiere de un jefe de planeaciones.</p>
+                    <p>Contacto: 314 2859989</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
     </main>
+    <footer>
+        <div class="footer-author">
+            <p><strong>Todos los derechos reservados a Juan Pablo Rodriguez ©2023</strong></p>
+        </div>
+    </footer>
